@@ -11,7 +11,7 @@ else:
 
 def add_newLine(sc): 
 
-#print("...Add a New line...", datetime.datetime.now())
+    print("...Add a New line...", datetime.datetime.now())
     if os.stat("test.txt").st_size == 0:
         with open("test.txt","w") as file1:
             file1.write("Added a New line at time : "+str(datetime.datetime.now())+ "\n")
