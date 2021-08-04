@@ -18,7 +18,7 @@ def add_newLine(sc):
     else:
         with open("test.txt","a") as file1:
             file1.write("Added a New line at time : "+str(datetime.datetime.now())+ "\n")
-    s.enter(1, 1, add_newLine, (sc,))
+    s.enter(30, 1, add_newLine, (sc,))
 
-s.enter(1, 1, add_newLine, (s,))
+s.enter(30, 1, add_newLine, (s,))
 s.run()
